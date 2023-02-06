@@ -28,22 +28,20 @@ public class LAB1 {
  System.out.println("State: " + state);
  System.out.println("Company: " + company);
 //Assume that you can divide the states among India into different regions (North, South, Central, East, and West). If the employee is from the southern part of India, with the help of a switch statement, it should display "The Employee is from the southern states of India; Preferable work location is in <state>",
- if (state.equals("Tamilnadu") || state.equals("Andhra") ||
- state.equals("Karnataka") || state.equals("Kerala")) {
- System.out.print("The Employee is from the southern states of India; ");
  switch (state) {
- case "Tamilnadu":
- System.out.println("Preferred work location is in Coimbatore");
- break;
- case "Andhra":
- System.out.println("Preferred work location is in Gundakal");
- break;
- case "Karnataka":
- System.out.println("Preferred work location is in Mysore");
- break;
- case "Kerala":
- System.out.println("Preferred work location is in Trivandrum");
- break;
+   case "Maharashtra","Goa","Gujarat":
+       System.out.println("The Employee is from the western part of India; Preferable work location is in"+state);
+       break;
+   case "Rajasthan","Haryana","Himachal Pradesh","Punjab","Chandigarh","Delhi","Jammu and Kashmir","Ladakh":
+       System.out.println("The Employee is from the northern part of India; Preferable work location is in"+state);
+       break;
+   case "Kerala","Andhra Pradesh","Karnataka","Tamil Nadu","Telangana":
+       System.out.println("The Employee is from the southern part of India; Preferable work location is in"+state);
+       break;
+   case "Odisha","Bihar","West Bengal","Jharkhand":
+       System.out.println("The Employee is from the eastern part of India; Preferable work location is in"+state);
+        break;
+}
  }
  }
 //Identify if the employee belongs to the top MNC Companies (Facebook, Google, Microsoft, Samsung, IBM, Apple); if so, print a message "The employee is working in Top MNC Companies".
