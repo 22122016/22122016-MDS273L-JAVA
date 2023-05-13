@@ -1,5 +1,3 @@
-//C:\\Users\\vhars\\Downloads\\iris.csv
-
 //String csvFile = "";
 import java.io.*;
 import java.util.*;
